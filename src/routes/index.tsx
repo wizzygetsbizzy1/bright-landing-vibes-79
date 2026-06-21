@@ -60,12 +60,15 @@ function Index() {
           ))}
         </ol>
 
-        <button
-          className="mt-8 w-full rounded-xl px-6 py-4 text-base font-bold text-primary-foreground shadow-[var(--shadow-soft)] transition hover:scale-[1.01] active:scale-[0.99]"
+        <a
+          href="https://giftclick.org/aff_c?offer_id=1587&aff_id=12008"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-8 block w-full rounded-xl px-6 py-4 text-center text-base font-bold text-primary-foreground shadow-[var(--shadow-soft)] transition hover:scale-[1.01] active:scale-[0.99]"
           style={{ background: "var(--gradient-brand)" }}
         >
           Get Started
-        </button>
+        </a>
 
         <p className="mt-5 text-center text-xs text-muted-foreground">
           Available in selected countries — US, UK, AU, CA
