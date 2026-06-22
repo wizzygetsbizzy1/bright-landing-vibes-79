@@ -1,8 +1,14 @@
+The error says `dist/client` doesn't exist — which means with `nitro: true` enabled, the build is now outputting to a different folder.
+
+Let's update the `netlify.toml` to fix the publish directory. Go to GitHub, click on `netlify.toml` and edit it to:
+
+```toml
 [build]
   command = "bun run build"
-  publish = "dist/client"
+  publish = ".netlify/functions-internal"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[build.environment]
+  NITRO_PRESET = "netlify"
+```
+
+Commit the change and tell me when done!
